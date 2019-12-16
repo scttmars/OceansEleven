@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ocean_s_Eleven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="QQA-Kd-Ewu">
+                                <rect key="frame" x="158.5" y="76" width="350" height="223"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocean's Eleven Card Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7V-GF-oQz">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2e-Xg-vV1">
+                                        <rect key="frame" x="145" y="82" width="60" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="1" green="0.24918692445706392" blue="0.15114418510552918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToRules:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4O-3k-Bgw"/>
+                                            <segue destination="gV4-ql-Qcg" kind="presentation" identifier="settingsSegue" id="1Gn-Mj-EWA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egu-s8-cIl">
+                                        <rect key="frame" x="139" y="175" width="72" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Rules">
+                                            <color key="titleColor" red="1" green="0.24918692449999999" blue="0.15114418509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="CSc-em-I8B" kind="presentation" identifier="rulesSegue" id="6xZ-SF-opv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18958268019999999" green="1" blue="0.11067119290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QQA-Kd-Ewu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4OV-vR-dUs"/>
+                            <constraint firstItem="QQA-Kd-Ewu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MKa-zr-SYj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="103.89805097451276"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hOz-gv-jUM">
+            <objects>
+                <viewController id="CSc-em-I8B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H8s-JD-cfR">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2F-ok-97n">
+                                <rect key="frame" x="21" y="20" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="backSegue" id="AqK-MS-Gs2"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epl-bf-eYC">
+                                <rect key="frame" x="50" y="50" width="567" height="275"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Play
+To start, each player shuffles their individual deck, and flips the top card face up.  These cards form the start of each player's poker hand, and are compared.
+
+Each time a card is revealed, the up-cards are compared to see which player has the stronger poker hand.  The player with the weaker hand must choose between two options:
+
+Deal another card from their deck and add it to the row of face-up cards in front of them, to try to improve their poker hand.
+Concede the hand to the other player.
+If a player deals another card, the rows of up-cards are again compared to see which player is weaker, and the lower hand again has the same options as above.  If the two players have equally high hands, both must deal an additional card face-up.
+
+This continues until one of the players concedes. All the face-up cards are then discarded, and will not re-enter play. Normal practice is for the player who won the hand (did not concede) to place one of the used cards apart from their discard pile, to keep track of the number of hands won. Each player then deals the next card of their deck face up to start the next hand.
+
+There is no limit to the number of cards the player with the weaker hand may expose in an effort to win the hand, except that a player who runs out of cards is forced to concede, having no more cards to deal.
+
+Comparing Hands
+When comparing hands, each player makes their best five-card poker hand from the row of cards in front of them. If there are fewer than five cards, the hand is ranked as though the remaining cards are worthless non-matching cards with no rank and no suit. So for example, if we denote a worthless card as 'x', then 5-5 counts as 5-5-x-x-x, the lowest possible pair of fives. So 5-5 is beaten by 5-5-3, which counts as 5-5-3-x-x and wins against 5-5 because a 3 beats an x. One the other hand 5-5 is better than A-K-Q-J because A-K-Q-J-x is just an ace-high hand, which is beaten by a pair of 5's.</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18958268019999999" green="1" blue="0.11067119290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Epl-bf-eYC" firstAttribute="leading" secondItem="e6h-Lg-eSr" secondAttribute="leading" constant="50" id="2vC-Y4-EPe"/>
+                            <constraint firstItem="Epl-bf-eYC" firstAttribute="top" secondItem="e6h-Lg-eSr" secondAttribute="top" constant="50" id="gL8-u2-k5J"/>
+                            <constraint firstItem="e6h-Lg-eSr" firstAttribute="bottom" secondItem="Epl-bf-eYC" secondAttribute="bottom" constant="50" id="mkt-U2-z5S"/>
+                            <constraint firstItem="e6h-Lg-eSr" firstAttribute="trailing" secondItem="Epl-bf-eYC" secondAttribute="trailing" constant="50" id="sOJ-wi-B7n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e6h-Lg-eSr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6UQ-MX-chf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.87106446776613" y="1221.5999999999999"/>
+        </scene>
+        <!--Options View Controller-->
+        <scene sceneID="sB0-Rg-FEc">
+            <objects>
+                <viewController id="gV4-ql-Qcg" customClass="OptionsViewController" customModule="Ocean_s_Eleven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jh5-6q-TPV">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9DN-DY-07R">
+                                <rect key="frame" x="177.5" y="39" width="312.5" height="297.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rll-li-On2">
+                                        <rect key="frame" x="102.5" y="0.0" width="107" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the number of human players:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-zI-uqs">
+                                        <rect key="frame" x="0.0" y="51" width="312.5" height="23"/>
+                                        <color key="backgroundColor" red="1" green="0.24918692449999999" blue="0.15114418509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <color key="highlightedColor" red="1" green="0.24918692449999999" blue="0.15114418509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pup-8E-fHe">
+                                        <rect key="frame" x="133.5" y="89" width="45" height="29"/>
+                                        <segments>
+                                            <segment title="1"/>
+                                            <segment title="2"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the number of rounds to win:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXr-Vc-w5i">
+                                        <rect key="frame" x="4.5" y="132" width="303.5" height="23"/>
+                                        <color key="backgroundColor" red="1" green="0.24918692449999999" blue="0.15114418509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCp-QN-P8N">
+                                        <rect key="frame" x="151" y="170" width="10.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="1" maximumValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xhl-UE-NKt">
+                                        <rect key="frame" x="109" y="205.5" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="roundStepper:" destination="gV4-ql-Qcg" eventType="valueChanged" id="KIq-5A-v69"/>
+                                        </connections>
+                                    </stepper>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-9D-zdC">
+                                        <rect key="frame" x="128.5" y="249.5" width="55" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="gLv-Fb-BUw" kind="presentation" identifier="gameSegue" id="T7t-YV-RSb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18958268019999999" green="1" blue="0.11067119290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9DN-DY-07R" firstAttribute="centerY" secondItem="Jh5-6q-TPV" secondAttribute="centerY" id="mkh-73-wWa"/>
+                            <constraint firstItem="9DN-DY-07R" firstAttribute="centerX" secondItem="Jh5-6q-TPV" secondAttribute="centerX" id="zJg-rM-40F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hdx-c9-PYp"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberOfPlayers" destination="Pup-8E-fHe" id="TXQ-bs-wDW"/>
+                        <outlet property="roundCount" destination="jCp-QN-P8N" id="M5A-dJ-pds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYU-jC-1k5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.28785607196414" y="106.40000000000001"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tB6-Q7-f6A">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="gLv-Fb-BUw" customClass="GameViewController" customModule="Ocean_s_Eleven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bRb-mk-UQc">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjv-r6-HxX">
+                                <rect key="frame" x="318" y="548" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Draw"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx0-pP-bXy">
+                                <rect key="frame" x="305" y="598" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Concede"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Pvr-iQ-KfF">
+                                <rect key="frame" x="9.5" y="235" width="122.5" height="130.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4q-hz-MMg">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB9-x4-16L">
+                                        <rect key="frame" x="0.0" y="31.5" width="30" height="30"/>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addCardP1:" destination="gLv-Fb-BUw" eventType="touchUpInside" id="Vpk-aH-44m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZy-2J-NMv">
+                                        <rect key="frame" x="0.0" y="72.5" width="62" height="30"/>
+                                        <state key="normal" title="Concede"/>
+                                        <connections>
+                                            <action selector="p1Concede:" destination="gLv-Fb-BUw" eventType="touchUpInside" id="ELo-0q-2iV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Cards Remaing: 52" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hi-VD-n3j">
+                                        <rect key="frame" x="0.0" y="113.5" width="122.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Hi-VD-n3j" firstAttribute="top" secondItem="uZy-2J-NMv" secondAttribute="bottom" constant="11" id="4t8-vz-yAe"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Hi-VD-n3j" secondAttribute="trailing" id="cBs-eL-1dc"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 - 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPp-nC-5YU">
+                                <rect key="frame" x="299.5" y="8" width="68" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FI-cn-AAs">
+                                <rect key="frame" x="20" y="8" width="30" height="30"/>
+                                <state key="normal" title="Quit"/>
+                                <connections>
+                                    <action selector="quitGame:" destination="gLv-Fb-BUw" eventType="touchUpInside" id="KSk-Ps-NmV"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="quitSegue" id="1rH-JI-UKp"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qkZ-l2-x9m">
+                                <rect key="frame" x="29.5" y="120" width="146.5" height="89"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5F-0l-bnE">
+                                        <rect key="frame" x="0.0" y="0.0" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-1U-tHK">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1B-fH-E9f">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANs-n4-fLU">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3n-Wk-20M">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5r-Jo-aWb">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnw-pX-ZJZ">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQ4-fS-WbB">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7k-dx-LCP">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSj-fJ-w17">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhc-nm-v87">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8k-D7-gch">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABc-BL-mac">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fx-5O-FpM">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ca7-gI-mmW">
+                                        <rect key="frame" x="0.0" y="18" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dV2-8n-Uxh">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dof-LI-h89">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZu-di-fnP">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1w-G5-yaf">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZF-5Y-XLF">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7D-Qa-cFC">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rll-eM-5u0">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqz-SH-itl">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-X2-uaQ">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIY-RJ-HgN">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2C-4D-wU7">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teR-Yl-fI3">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yad-IJ-Q4i">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Po4-h3-Sg1">
+                                        <rect key="frame" x="0.0" y="36" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faT-an-3DF">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLI-67-BZA">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7U-2M-mgA">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i48-Aa-M05">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ba-KJ-11R">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYO-WG-h6o">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJJ-2K-MbH">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pt-57-vMf">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0w-2U-poP">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pta-BW-Szr">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMl-vZ-AYo">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN4-iV-1tc">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9J-Qo-Jym">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1V-Qa-THA">
+                                        <rect key="frame" x="0.0" y="54" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBb-3z-4vo">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8Y-1V-j9I">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wku-dq-1JN">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JC-yr-sey">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjs-fT-xdE">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkw-be-IDm">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KH9-gR-MYn">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umb-1b-WZU">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbZ-12-Zxe">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nci-XP-6jf">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTC-h6-Cd5">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iM-kH-AfF">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-kn-wOh">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98K-hR-7Z4">
+                                        <rect key="frame" x="0.0" y="72" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N13-pc-UzN">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL6-Tm-MLb">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLz-1A-fok">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oW-qi-27T">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-Yy-uqJ">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h07-yq-HWj">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGI-To-av4">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1L-e5-jhA">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPI-Qz-JgA">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-0g-qVi">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVl-f5-b2u">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foi-LB-jM1">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-jB-NwE">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k4c-aE-4Un">
+                                <rect key="frame" x="9.5" y="138" width="17" height="68"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1da-w6-wkS">
+                                        <rect key="frame" x="0.0" y="0.0" width="17" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H72-dE-AoL">
+                                                <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtp-ng-FIk">
+                                                <rect key="frame" x="0.0" y="17" width="17" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fJ-Ob-9UB">
+                                                <rect key="frame" x="0.0" y="34" width="17" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3q-oW-Bch">
+                                        <rect key="frame" x="0.0" y="51" width="17" height="17"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Aa5-KW-NCZ">
+                                <rect key="frame" x="511" y="120" width="146.5" height="89"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWB-bY-gxI">
+                                        <rect key="frame" x="0.0" y="0.0" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUM-dD-L23">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuP-kw-Gk2">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmL-4s-WBZ">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSN-eP-owv">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w75-qg-NXL">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfb-aT-AUX">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-4t-ua8">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n1-Ew-Gfk">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNQ-U2-OBf">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbC-ef-yiR">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3C-gG-2aW">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Q" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrG-KA-LYD">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3s-0S-s7k">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmj-Hh-Kq5">
+                                        <rect key="frame" x="0.0" y="18" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjJ-Tl-hh4">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gn-oX-k18">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vl-eI-Fls">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uM-FY-OX5">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUb-pD-jj1">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoC-ms-ach">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gu-IQ-eAN">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxN-lv-9Bf">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmY-7r-BuC">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4e-10-JKV">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPS-5H-WyH">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7v-zJ-tjs">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kx-py-X74">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klZ-aK-1XJ">
+                                        <rect key="frame" x="0.0" y="36" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsG-Yf-gl5">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9F-Vw-mlb">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZe-FF-EFf">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvW-cF-CAc">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciJ-7f-CZ8">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPD-Q8-IcK">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urN-dk-vC3">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGV-hC-IVJ">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq3-vK-uCU">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooF-OJ-8HU">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fks-FP-STX">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrE-L3-Rkn">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-kI-Df7">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka3-4B-xnj">
+                                        <rect key="frame" x="0.0" y="54" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2E-st-bAi">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nde-oj-P6P">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-Gb-SeE">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qr2-xp-UKQ">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-3r-BBo">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG5-pg-wy9">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09X-jP-KT5">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApQ-iv-Kym">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXa-Ug-zHg">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5B-1w-EgY">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjJ-z7-yIs">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOt-la-wcj">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g2-bi-gwh">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-WF-7XZ">
+                                        <rect key="frame" x="0.0" y="72" width="146.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtX-Lj-zAY">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-w6-m4r">
+                                                <rect key="frame" x="10.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o70-EJ-Q4w">
+                                                <rect key="frame" x="21" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKH-th-8ag">
+                                                <rect key="frame" x="31.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GC5-PE-35h">
+                                                <rect key="frame" x="42" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyx-6v-9SA">
+                                                <rect key="frame" x="52.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W91-Ph-VuT">
+                                                <rect key="frame" x="63" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSd-bp-lZY">
+                                                <rect key="frame" x="73.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gec-B9-28S">
+                                                <rect key="frame" x="84" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcF-Bs-y3N">
+                                                <rect key="frame" x="94.5" y="0.0" width="20.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2va-ep-eXt">
+                                                <rect key="frame" x="115" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAj-aB-HqQ">
+                                                <rect key="frame" x="125.5" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eG-Xx-cHT">
+                                                <rect key="frame" x="136" y="0.0" width="10.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zKq-h0-bPy">
+                                <rect key="frame" x="84" y="20" width="60" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="nqn-H0-Hcg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tna-kA-jlm">
+                                <rect key="frame" x="553" y="20" width="60" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="ZDe-V8-JUK"/>
+                                    <constraint firstAttribute="width" constant="60" id="cqI-vF-EEY"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQ8-7j-c8h">
+                                <rect key="frame" x="234.5" y="163" width="198.5" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <color key="textColor" red="1" green="0.24918692449999999" blue="0.15114418509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HKN-AF-fwE">
+                                <rect key="frame" x="491" y="141" width="17" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-5G-FGt">
+                                        <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txZ-hD-Pbq">
+                                        <rect key="frame" x="0.0" y="17" width="17" height="17"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STn-v7-biN">
+                                        <rect key="frame" x="0.0" y="34" width="17" height="17"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEo-PD-4Sp">
+                                        <rect key="frame" x="0.0" y="51" width="17" height="17"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="cya-pa-nIw">
+                                <rect key="frame" x="535" y="235" width="122.5" height="130.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abM-bJ-xko">
+                                        <rect key="frame" x="61" y="0.0" width="61.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7E-ab-ozh">
+                                        <rect key="frame" x="92.5" y="31.5" width="30" height="30"/>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addCardP2:" destination="gLv-Fb-BUw" eventType="touchUpInside" id="JtP-Sc-bvt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xh3-mB-zqi">
+                                        <rect key="frame" x="60.5" y="72.5" width="62" height="30"/>
+                                        <state key="normal" title="Concede"/>
+                                        <connections>
+                                            <action selector="p2Concede:" destination="gLv-Fb-BUw" eventType="touchUpInside" id="OZ1-9c-efw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards Remaing: 52" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-Fv-wFV">
+                                        <rect key="frame" x="0.0" y="113.5" width="122.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18958268019999999" green="1" blue="0.11067119290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2FI-cn-AAs" firstAttribute="leading" secondItem="m6E-sV-yhc" secondAttribute="leading" constant="20" id="4qP-jl-sWa"/>
+                            <constraint firstItem="zKq-h0-bPy" firstAttribute="top" secondItem="m6E-sV-yhc" secondAttribute="top" constant="20" id="6Pr-9j-8LY"/>
+                            <constraint firstItem="HKN-AF-fwE" firstAttribute="bottom" secondItem="Aa5-KW-NCZ" secondAttribute="bottom" id="9xy-yU-nfI"/>
+                            <constraint firstItem="fPp-nC-5YU" firstAttribute="top" secondItem="m6E-sV-yhc" secondAttribute="top" constant="8" id="Bqe-y0-RQ4"/>
+                            <constraint firstItem="k4c-aE-4Un" firstAttribute="leading" secondItem="m6E-sV-yhc" secondAttribute="leading" constant="9.5" id="CQ5-NW-eHT"/>
+                            <constraint firstItem="fPp-nC-5YU" firstAttribute="centerX" secondItem="bRb-mk-UQc" secondAttribute="centerX" id="DWi-7e-hN0"/>
+                            <constraint firstItem="Tna-kA-jlm" firstAttribute="top" secondItem="m6E-sV-yhc" secondAttribute="top" constant="20" id="Eth-Be-aZs"/>
+                            <constraint firstItem="Pvr-iQ-KfF" firstAttribute="leading" secondItem="m6E-sV-yhc" secondAttribute="leading" constant="9.5" id="Kln-Gl-6on"/>
+                            <constraint firstItem="m6E-sV-yhc" firstAttribute="bottom" secondItem="cya-pa-nIw" secondAttribute="bottom" constant="9.5" id="LnJ-Cg-TXh"/>
+                            <constraint firstItem="m6E-sV-yhc" firstAttribute="trailing" secondItem="cya-pa-nIw" secondAttribute="trailing" constant="9.5" id="Ww0-Ih-078"/>
+                            <constraint firstItem="qkZ-l2-x9m" firstAttribute="top" secondItem="zKq-h0-bPy" secondAttribute="bottom" constant="16" id="Zxg-lb-U9b"/>
+                            <constraint firstItem="m6E-sV-yhc" firstAttribute="bottom" secondItem="Pvr-iQ-KfF" secondAttribute="bottom" constant="9.5" id="bRp-S7-6rb"/>
+                            <constraint firstItem="Tna-kA-jlm" firstAttribute="bottom" secondItem="zKq-h0-bPy" secondAttribute="bottom" id="cpA-jI-zcW"/>
+                            <constraint firstItem="2FI-cn-AAs" firstAttribute="top" secondItem="m6E-sV-yhc" secondAttribute="top" constant="8" id="fIG-oy-ozO"/>
+                            <constraint firstItem="Aa5-KW-NCZ" firstAttribute="leading" secondItem="HKN-AF-fwE" secondAttribute="trailing" constant="3" id="fJb-cJ-4Dl"/>
+                            <constraint firstItem="qkZ-l2-x9m" firstAttribute="leading" secondItem="k4c-aE-4Un" secondAttribute="trailing" constant="3" id="hAR-dH-MxO"/>
+                            <constraint firstItem="m6E-sV-yhc" firstAttribute="trailing" secondItem="Aa5-KW-NCZ" secondAttribute="trailing" constant="9.5" id="hI8-jP-8az"/>
+                            <constraint firstItem="Aa5-KW-NCZ" firstAttribute="top" secondItem="Tna-kA-jlm" secondAttribute="bottom" constant="16" id="lCc-hw-DMf"/>
+                            <constraint firstItem="m6E-sV-yhc" firstAttribute="trailing" secondItem="Tna-kA-jlm" secondAttribute="trailing" constant="54" id="sWY-nU-dyL"/>
+                            <constraint firstItem="Pvr-iQ-KfF" firstAttribute="top" secondItem="cya-pa-nIw" secondAttribute="top" id="teC-0n-hS5"/>
+                            <constraint firstItem="k4c-aE-4Un" firstAttribute="top" secondItem="2FI-cn-AAs" secondAttribute="bottom" constant="100" id="u6U-cA-FBm"/>
+                            <constraint firstItem="zKq-h0-bPy" firstAttribute="leading" secondItem="2FI-cn-AAs" secondAttribute="trailing" constant="34" id="wOs-eN-CNa"/>
+                            <constraint firstItem="aQ8-7j-c8h" firstAttribute="centerY" secondItem="bRb-mk-UQc" secondAttribute="centerY" id="yeN-ew-31f"/>
+                            <constraint firstItem="aQ8-7j-c8h" firstAttribute="centerX" secondItem="bRb-mk-UQc" secondAttribute="centerX" id="yft-B2-kf7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m6E-sV-yhc"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardsRemaingP2" destination="u9h-Fv-wFV" id="ZMa-iv-KIo"/>
+                        <outlet property="cardsRemainingP1" destination="9Hi-VD-n3j" id="cnS-eA-9zE"/>
+                        <outlet property="gameOverLabel" destination="aQ8-7j-c8h" id="PCu-Jy-24f"/>
+                        <outlet property="p1AddButton" destination="VB9-x4-16L" id="F9N-Gb-x59"/>
+                        <outlet property="p1ConcedeButton" destination="uZy-2J-NMv" id="8rJ-4s-dB5"/>
+                        <outlet property="p1Display" destination="zKq-h0-bPy" id="LrI-IN-1Z9"/>
+                        <outlet property="p1Leading" destination="p4q-hz-MMg" id="v0L-Dh-gXQ"/>
+                        <outlet property="p2AddButton" destination="w7E-ab-ozh" id="SD5-Bp-3Lp"/>
+                        <outlet property="p2ConcedeButton" destination="Xh3-mB-zqi" id="X36-e1-oz9"/>
+                        <outlet property="p2Display" destination="Tna-kA-jlm" id="FH4-Hv-55v"/>
+                        <outlet property="p2Leading" destination="abM-bJ-xko" id="uUb-y2-nCR"/>
+                        <outlet property="roundCount" destination="fPp-nC-5YU" id="WUm-Po-qQT"/>
+                        <outletCollection property="p1DiamondLabel" destination="dV2-8n-Uxh" collectionClass="NSMutableArray" id="98Y-eH-5fY"/>
+                        <outletCollection property="p1DiamondLabel" destination="dof-LI-h89" collectionClass="NSMutableArray" id="dvb-ee-B6g"/>
+                        <outletCollection property="p1DiamondLabel" destination="hZu-di-fnP" collectionClass="NSMutableArray" id="WLo-06-h0R"/>
+                        <outletCollection property="p1DiamondLabel" destination="h1w-G5-yaf" collectionClass="NSMutableArray" id="aCf-Bb-Jil"/>
+                        <outletCollection property="p1DiamondLabel" destination="lZF-5Y-XLF" collectionClass="NSMutableArray" id="lHh-7F-Jha"/>
+                        <outletCollection property="p1DiamondLabel" destination="b7D-Qa-cFC" collectionClass="NSMutableArray" id="abw-ZX-Z55"/>
+                        <outletCollection property="p1DiamondLabel" destination="rll-eM-5u0" collectionClass="NSMutableArray" id="CIt-6T-Qeh"/>
+                        <outletCollection property="p1DiamondLabel" destination="Wqz-SH-itl" collectionClass="NSMutableArray" id="eP1-Nc-J9k"/>
+                        <outletCollection property="p1DiamondLabel" destination="xhO-X2-uaQ" collectionClass="NSMutableArray" id="G16-42-uCt"/>
+                        <outletCollection property="p1DiamondLabel" destination="lIY-RJ-HgN" collectionClass="NSMutableArray" id="w2U-gd-fdt"/>
+                        <outletCollection property="p1DiamondLabel" destination="b2C-4D-wU7" collectionClass="NSMutableArray" id="i09-BD-I0I"/>
+                        <outletCollection property="p1DiamondLabel" destination="teR-Yl-fI3" collectionClass="NSMutableArray" id="YVK-AC-loo"/>
+                        <outletCollection property="p1DiamondLabel" destination="yad-IJ-Q4i" collectionClass="NSMutableArray" id="5CC-i1-cIZ"/>
+                        <outletCollection property="p1HeartsLabel" destination="faT-an-3DF" collectionClass="NSMutableArray" id="5Xp-e8-SYM"/>
+                        <outletCollection property="p1HeartsLabel" destination="bLI-67-BZA" collectionClass="NSMutableArray" id="WXK-ZT-uzc"/>
+                        <outletCollection property="p1HeartsLabel" destination="A7U-2M-mgA" collectionClass="NSMutableArray" id="KfN-dT-J0W"/>
+                        <outletCollection property="p1HeartsLabel" destination="i48-Aa-M05" collectionClass="NSMutableArray" id="yoD-nA-bcu"/>
+                        <outletCollection property="p1HeartsLabel" destination="3ba-KJ-11R" collectionClass="NSMutableArray" id="3eW-90-zuX"/>
+                        <outletCollection property="p1HeartsLabel" destination="NYO-WG-h6o" collectionClass="NSMutableArray" id="7yS-rL-hVB"/>
+                        <outletCollection property="p1HeartsLabel" destination="rJJ-2K-MbH" collectionClass="NSMutableArray" id="MpP-JD-pD4"/>
+                        <outletCollection property="p1HeartsLabel" destination="1pt-57-vMf" collectionClass="NSMutableArray" id="Usk-ja-0ls"/>
+                        <outletCollection property="p1HeartsLabel" destination="G0w-2U-poP" collectionClass="NSMutableArray" id="jh2-4S-c32"/>
+                        <outletCollection property="p1HeartsLabel" destination="pta-BW-Szr" collectionClass="NSMutableArray" id="yQ9-vz-RYF"/>
+                        <outletCollection property="p1HeartsLabel" destination="hMl-vZ-AYo" collectionClass="NSMutableArray" id="6AC-0b-cIz"/>
+                        <outletCollection property="p1HeartsLabel" destination="HN4-iV-1tc" collectionClass="NSMutableArray" id="A6h-xx-OBK"/>
+                        <outletCollection property="p1HeartsLabel" destination="n9J-Qo-Jym" collectionClass="NSMutableArray" id="ZpJ-YH-Zp1"/>
+                        <outletCollection property="p1ClubsLabel" destination="gBb-3z-4vo" collectionClass="NSMutableArray" id="Bgq-WQ-oje"/>
+                        <outletCollection property="p1ClubsLabel" destination="N8Y-1V-j9I" collectionClass="NSMutableArray" id="EFt-UD-ppx"/>
+                        <outletCollection property="p1ClubsLabel" destination="Wku-dq-1JN" collectionClass="NSMutableArray" id="v3G-3K-OOt"/>
+                        <outletCollection property="p1ClubsLabel" destination="6JC-yr-sey" collectionClass="NSMutableArray" id="9Os-n8-iiY"/>
+                        <outletCollection property="p1ClubsLabel" destination="wjs-fT-xdE" collectionClass="NSMutableArray" id="VFS-UX-OaE"/>
+                        <outletCollection property="p1ClubsLabel" destination="Lkw-be-IDm" collectionClass="NSMutableArray" id="ypf-8U-uew"/>
+                        <outletCollection property="p1ClubsLabel" destination="KH9-gR-MYn" collectionClass="NSMutableArray" id="Ruo-Dd-WV2"/>
+                        <outletCollection property="p1ClubsLabel" destination="Umb-1b-WZU" collectionClass="NSMutableArray" id="EfR-GI-1qt"/>
+                        <outletCollection property="p1ClubsLabel" destination="IbZ-12-Zxe" collectionClass="NSMutableArray" id="Gxg-q9-ErN"/>
+                        <outletCollection property="p1ClubsLabel" destination="Nci-XP-6jf" collectionClass="NSMutableArray" id="zd6-H8-kdf"/>
+                        <outletCollection property="p1ClubsLabel" destination="oTC-h6-Cd5" collectionClass="NSMutableArray" id="W7O-34-ugf"/>
+                        <outletCollection property="p1ClubsLabel" destination="4iM-kH-AfF" collectionClass="NSMutableArray" id="dLW-i1-xlf"/>
+                        <outletCollection property="p1ClubsLabel" destination="5jT-kn-wOh" collectionClass="NSMutableArray" id="9lG-fY-eJd"/>
+                        <outletCollection property="p1SpadesLabel" destination="N13-pc-UzN" collectionClass="NSMutableArray" id="a2y-QC-KSs"/>
+                        <outletCollection property="p1SpadesLabel" destination="AL6-Tm-MLb" collectionClass="NSMutableArray" id="V9m-a3-k8P"/>
+                        <outletCollection property="p1SpadesLabel" destination="VLz-1A-fok" collectionClass="NSMutableArray" id="Ym7-7k-2I6"/>
+                        <outletCollection property="p1SpadesLabel" destination="3oW-qi-27T" collectionClass="NSMutableArray" id="Gnj-Q7-Dme"/>
+                        <outletCollection property="p1SpadesLabel" destination="6QH-Yy-uqJ" collectionClass="NSMutableArray" id="z9y-sT-51t"/>
+                        <outletCollection property="p1SpadesLabel" destination="h07-yq-HWj" collectionClass="NSMutableArray" id="B1v-Ej-3Vl"/>
+                        <outletCollection property="p1SpadesLabel" destination="AGI-To-av4" collectionClass="NSMutableArray" id="VgG-cd-xZk"/>
+                        <outletCollection property="p1SpadesLabel" destination="I1L-e5-jhA" collectionClass="NSMutableArray" id="BCc-Oe-qWQ"/>
+                        <outletCollection property="p1SpadesLabel" destination="WPI-Qz-JgA" collectionClass="NSMutableArray" id="BZD-WI-SOi"/>
+                        <outletCollection property="p1SpadesLabel" destination="ejS-0g-qVi" collectionClass="NSMutableArray" id="v6D-af-P9Q"/>
+                        <outletCollection property="p1SpadesLabel" destination="NVl-f5-b2u" collectionClass="NSMutableArray" id="Yvg-Pi-yf0"/>
+                        <outletCollection property="p1SpadesLabel" destination="foi-LB-jM1" collectionClass="NSMutableArray" id="uLf-eM-CUO"/>
+                        <outletCollection property="p1SpadesLabel" destination="V4j-jB-NwE" collectionClass="NSMutableArray" id="pnl-zG-5WQ"/>
+                        <outletCollection property="p2DiamondsLabel" destination="BjJ-Tl-hh4" collectionClass="NSMutableArray" id="C7m-aj-T36"/>
+                        <outletCollection property="p2HeartsLabel" destination="GsG-Yf-gl5" collectionClass="NSMutableArray" id="4Et-St-HSG"/>
+                        <outletCollection property="p2ClubsLabel" destination="p2E-st-bAi" collectionClass="NSMutableArray" id="HEA-cd-cpU"/>
+                        <outletCollection property="p2SpadesLabel" destination="mtX-Lj-zAY" collectionClass="NSMutableArray" id="xtE-h2-gNj"/>
+                        <outletCollection property="p2DiamondsLabel" destination="6Gn-oX-k18" collectionClass="NSMutableArray" id="Yda-xp-Epg"/>
+                        <outletCollection property="p2DiamondsLabel" destination="1vl-eI-Fls" collectionClass="NSMutableArray" id="qI9-uF-PTC"/>
+                        <outletCollection property="p2DiamondsLabel" destination="5uM-FY-OX5" collectionClass="NSMutableArray" id="Wx8-lD-Zxa"/>
+                        <outletCollection property="p2DiamondsLabel" destination="wUb-pD-jj1" collectionClass="NSMutableArray" id="aM7-7B-99a"/>
+                        <outletCollection property="p2DiamondsLabel" destination="eoC-ms-ach" collectionClass="NSMutableArray" id="mxj-tu-QGT"/>
+                        <outletCollection property="p2DiamondsLabel" destination="4Gu-IQ-eAN" collectionClass="NSMutableArray" id="CYT-p1-DAy"/>
+                        <outletCollection property="p2DiamondsLabel" destination="vxN-lv-9Bf" collectionClass="NSMutableArray" id="uiG-2g-xee"/>
+                        <outletCollection property="p2DiamondsLabel" destination="GmY-7r-BuC" collectionClass="NSMutableArray" id="5YJ-P9-fbL"/>
+                        <outletCollection property="p2DiamondsLabel" destination="Z4e-10-JKV" collectionClass="NSMutableArray" id="7Zr-BG-0bS"/>
+                        <outletCollection property="p2DiamondsLabel" destination="IPS-5H-WyH" collectionClass="NSMutableArray" id="ei6-bD-Rr6"/>
+                        <outletCollection property="p2DiamondsLabel" destination="s7v-zJ-tjs" collectionClass="NSMutableArray" id="sPe-Ne-Jjs"/>
+                        <outletCollection property="p2DiamondsLabel" destination="8kx-py-X74" collectionClass="NSMutableArray" id="Q5U-da-zbq"/>
+                        <outletCollection property="p2HeartsLabel" destination="d9F-Vw-mlb" collectionClass="NSMutableArray" id="KZg-rg-dXx"/>
+                        <outletCollection property="p2HeartsLabel" destination="iZe-FF-EFf" collectionClass="NSMutableArray" id="4EE-ft-LxK"/>
+                        <outletCollection property="p2HeartsLabel" destination="hvW-cF-CAc" collectionClass="NSMutableArray" id="KvV-mx-ZlI"/>
+                        <outletCollection property="p2HeartsLabel" destination="ciJ-7f-CZ8" collectionClass="NSMutableArray" id="Ak3-bn-yn8"/>
+                        <outletCollection property="p2HeartsLabel" destination="IPD-Q8-IcK" collectionClass="NSMutableArray" id="vA6-ju-NwX"/>
+                        <outletCollection property="p2HeartsLabel" destination="urN-dk-vC3" collectionClass="NSMutableArray" id="He2-cO-NfW"/>
+                        <outletCollection property="p2HeartsLabel" destination="WGV-hC-IVJ" collectionClass="NSMutableArray" id="c5q-h1-FCz"/>
+                        <outletCollection property="p2HeartsLabel" destination="Zq3-vK-uCU" collectionClass="NSMutableArray" id="7rp-sk-VMY"/>
+                        <outletCollection property="p2HeartsLabel" destination="ooF-OJ-8HU" collectionClass="NSMutableArray" id="U2x-he-bUl"/>
+                        <outletCollection property="p2HeartsLabel" destination="fks-FP-STX" collectionClass="NSMutableArray" id="C9k-pH-lzq"/>
+                        <outletCollection property="p2HeartsLabel" destination="DrE-L3-Rkn" collectionClass="NSMutableArray" id="ePb-uT-Ek7"/>
+                        <outletCollection property="p2HeartsLabel" destination="gIO-kI-Df7" collectionClass="NSMutableArray" id="bFo-LP-q9h"/>
+                        <outletCollection property="p2ClubsLabel" destination="Nde-oj-P6P" collectionClass="NSMutableArray" id="vzY-HJ-Zs8"/>
+                        <outletCollection property="p2ClubsLabel" destination="p4Z-Gb-SeE" collectionClass="NSMutableArray" id="b26-dt-ccq"/>
+                        <outletCollection property="p2ClubsLabel" destination="Qr2-xp-UKQ" collectionClass="NSMutableArray" id="Ytk-Om-det"/>
+                        <outletCollection property="p2ClubsLabel" destination="y3g-3r-BBo" collectionClass="NSMutableArray" id="r2T-TR-W2l"/>
+                        <outletCollection property="p2ClubsLabel" destination="NG5-pg-wy9" collectionClass="NSMutableArray" id="xJL-dh-OjF"/>
+                        <outletCollection property="p2ClubsLabel" destination="09X-jP-KT5" collectionClass="NSMutableArray" id="dBc-rN-T1w"/>
+                        <outletCollection property="p2ClubsLabel" destination="ApQ-iv-Kym" collectionClass="NSMutableArray" id="YbA-1d-hzF"/>
+                        <outletCollection property="p2ClubsLabel" destination="xXa-Ug-zHg" collectionClass="NSMutableArray" id="e3L-3T-HdO"/>
+                        <outletCollection property="p2ClubsLabel" destination="k5B-1w-EgY" collectionClass="NSMutableArray" id="dvZ-Cr-8IB"/>
+                        <outletCollection property="p2ClubsLabel" destination="EjJ-z7-yIs" collectionClass="NSMutableArray" id="hsj-sw-oZM"/>
+                        <outletCollection property="p2ClubsLabel" destination="WOt-la-wcj" collectionClass="NSMutableArray" id="lGV-va-R3W"/>
+                        <outletCollection property="p2ClubsLabel" destination="6g2-bi-gwh" collectionClass="NSMutableArray" id="OKP-0J-cNU"/>
+                        <outletCollection property="p2SpadesLabel" destination="OdR-w6-m4r" collectionClass="NSMutableArray" id="IgO-eE-MN9"/>
+                        <outletCollection property="p2SpadesLabel" destination="o70-EJ-Q4w" collectionClass="NSMutableArray" id="U6g-JY-0m8"/>
+                        <outletCollection property="p2SpadesLabel" destination="qKH-th-8ag" collectionClass="NSMutableArray" id="0Nl-Xx-OHj"/>
+                        <outletCollection property="p2SpadesLabel" destination="GC5-PE-35h" collectionClass="NSMutableArray" id="hva-8t-R5j"/>
+                        <outletCollection property="p2SpadesLabel" destination="uyx-6v-9SA" collectionClass="NSMutableArray" id="BWU-sD-MxH"/>
+                        <outletCollection property="p2SpadesLabel" destination="W91-Ph-VuT" collectionClass="NSMutableArray" id="FH5-Ti-x51"/>
+                        <outletCollection property="p2SpadesLabel" destination="MSd-bp-lZY" collectionClass="NSMutableArray" id="EL6-PX-Jvb"/>
+                        <outletCollection property="p2SpadesLabel" destination="Gec-B9-28S" collectionClass="NSMutableArray" id="hNg-Dw-EvE"/>
+                        <outletCollection property="p2SpadesLabel" destination="HcF-Bs-y3N" collectionClass="NSMutableArray" id="bwJ-qC-3Ug"/>
+                        <outletCollection property="p2SpadesLabel" destination="2va-ep-eXt" collectionClass="NSMutableArray" id="Nfi-3i-FPD"/>
+                        <outletCollection property="p2SpadesLabel" destination="hAj-aB-HqQ" collectionClass="NSMutableArray" id="Bi7-rA-aU0"/>
+                        <outletCollection property="p2SpadesLabel" destination="2eG-Xx-cHT" collectionClass="NSMutableArray" id="nmG-Y8-ajG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Tp-DV-dsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682.608695652174" y="100"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1rH-JI-UKp"/>
+    </inferredMetricsTieBreakers>
+</document>
